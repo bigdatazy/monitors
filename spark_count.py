@@ -30,7 +30,7 @@ def test():
     no = 0
 
     # 爬虫获取数据
-    response = requests.get("http://192.168.3.149:8088/cluster/apps/FINISHED")
+    response = requests.get("http://192.168.2.12:8088/cluster/apps/FINISHED")
     f = response.text.encode().split("\n")
 
     start = False
@@ -63,7 +63,7 @@ def test():
 def mysql_insert():
 
         conn=MySQLdb.connect(
-            host='192.168.35.102',
+            host='192.168.3.122',
             port = 3306,
             user='www',
             passwd='mysql',
